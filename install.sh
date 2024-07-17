@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/bash
 
 # Zsh Shell
 apt -y update && apt -y upgrade
