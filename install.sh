@@ -2,7 +2,9 @@
 
 # Zsh Shell
 apt -y update && apt -y upgrade
-apt -y install build-essential procps curl file git htop nvtop
+apt -y install build-essential procps \
+                curl file git htop nvtop \
+                psmisc xclip htop tree
 apt install -y zsh
 chsh -s $(which zsh)
 
@@ -25,11 +27,14 @@ brew install docker
 # GitHub CLI
 brew install gh
 
+# k9s
+brew install k9s
+
 ## some setup
 pip install pre-commit
 pre-commit install
 
-pip install ruff
+pip install ruff mypy pylint ipdb
 
 exec zsh
 source ~/.zshrc
