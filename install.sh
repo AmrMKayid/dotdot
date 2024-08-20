@@ -38,3 +38,6 @@ pip install ruff mypy pylint ipdb
 
 exec zsh
 source ~/.zshrc
+
+
+export DECORD_EOF_RETRY_MAX=81920
