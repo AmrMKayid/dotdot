@@ -36,8 +36,7 @@ pre-commit install
 
 pip install ruff mypy pylint ipdb
 
+echo "export DECORD_EOF_RETRY_MAX=81920" >> ~/.zshrc
+
 exec zsh
 source ~/.zshrc
-
-
-export DECORD_EOF_RETRY_MAX=81920
